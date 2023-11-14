@@ -51,6 +51,7 @@ header {
 
 .logo__div {
   display: flex;
+  align-items: center;
 }
 .logo__divimg {
   width: 34px;
@@ -165,7 +166,7 @@ header {
 }
 
 .features__div {
-  margin: 10rem 0;
+  margin: 150px 0;
   text-align: center;
 }
 .features__div p {
@@ -199,15 +200,13 @@ header {
   display: flex;
   align-items: center;
 }
-.call__div button {
+.call__div --icon {
   width: -moz-max-content;
   width: max-content;
   height: -moz-max-content;
   height: max-content;
-  background-color: transparent;
-  border: none;
 }
-.call__div buttonimg {
+.call__div --iconimg {
   width: 100px;
   height: 100px;
   border-radius: 50px;
@@ -246,7 +245,7 @@ header {
 
 .about__us__div {
   border-radius: 75px;
-  margin-top: 10rem;
+  margin-top: 150px;
   padding: 90px 0;
   background-color: #F4F0EC;
 }
@@ -302,7 +301,6 @@ header {
 }
 
 .project__card {
-  position: relative;
   width: -moz-max-content;
   width: max-content;
   margin-bottom: 56px;
@@ -320,10 +318,22 @@ header {
   color: #4D5053;
 }
 
+.project__card--content {
+  position: relative;
+}
+
 .project_arrow_div {
   position: absolute;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  align-items: center;
   right: 0;
-  bottom: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: red;
+  background-image: url(../images/projectarrowbtn.svg);
 }
 
 .project__card--image-1 img {
@@ -396,11 +406,12 @@ header {
 .contact_btn {
   position: relative;
   margin-top: 32px;
-  padding: 26px 38px;
+  padding: 28px 40px;
   border-radius: 10px;
   background-color: #CDA274;
   color: white;
   font-weight: 600;
+  border: none;
 }
 
 .contactarrow_icon {
@@ -506,4 +517,227 @@ footer {
 .arrange_cards {
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  /* Your styles for screens between 600px and 1200px wide go here */
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  .banner__div img {
+    border-bottom-left-radius: 200px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .banner__div img {
+    border-bottom-left-radius: 150px;
+  }
+  .project__card {
+    width: 48%;
+  }
+  .project__card img {
+    width: 100%;
+  }
+  .article__card {
+    width: 27%;
+  }
+  .article__card--image {
+    width: 100%;
+  }
+  .social_div {
+    flex-wrap: wrap;
+  }
+  .design__image {
+    width: 50%;
+  }
+  .design__image img {
+    width: 100%;
+  }
+  .art__section {
+    margin-bottom: 150px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .banner__div--content h2 {
+    font-size: 52px;
+  }
+  p {
+    font-size: 16px;
+    letter-spacing: 0px;
+  }
+  .banner__div img {
+    border-bottom-left-radius: 150px;
+  }
+  .banner__div--content button {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
+  .horizontalflex {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .features__div {
+    width: 40%;
+    margin: 40px 0 0 0;
+  }
+  .features_section {
+    padding: 150px 0;
+  }
+  .art__section {
+    display: block;
+  }
+  .design__div {
+    width: 100%;
+    text-align: justify;
+  }
+  .design__image {
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+  .flexspace {
+    justify-content: center;
+    gap: 20px;
+  }
+  .user_card {
+    width: 38% !important;
+  }
+  .design__div--heading {
+    text-align: center;
+  }
+  .brand__div {
+    flex-wrap: wrap;
+  }
+  .brand__div div {
+    width: 30%;
+    text-align: center;
+  }
+  .brand__div divimg {
+    width: 100%;
+  }
+  .project__card {
+    width: 40%;
+    justify-content: space-around;
+  }
+  .project__row-1 {
+    gap: none;
+    justify-content: space-around;
+  }
+  .project__card img {
+    width: 100%;
+  }
+  .article__card {
+    width: 40%;
+  }
+  .article__card --image {
+    width: 100%;
+  }
+  .arrange_cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .article__card--image {
+    width: 100%;
+    height: auto;
+  }
+  .footer_container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .footer_inn,
+  herdiv {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  p {
+    letter-spacing: 0;
+  }
+  .flex-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar__list {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .search__div {
+    margin-top: 10px;
+  }
+  .banner__div--content h2 {
+    font-size: 36px;
+    color: #292f36;
+  }
+  .banner__div img {
+    border-bottom-left-radius: 120px;
+  }
+  .banner__div--content button {
+    font-size: 16px;
+    padding: 18px 36px;
+  }
+  .button__div--arrow {
+    right: 12px;
+  }
+  .horizontalflex {
+    flex-direction: column;
+  }
+  .features__div {
+    margin: 30px 0 0 0;
+  }
+  .art__section {
+    display: block;
+    text-align: justify;
+  }
+  .design__image img {
+    width: 100%;
+  }
+  .user_card {
+    width: 100% !important;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 50px;
+  }
+  .brand__div {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .project__row-1 {
+    flex-direction: column;
+  }
+  .arrange_cards {
+    flex-direction: column;
+  }
+  .article__card {
+    width: 100%;
+  }
+  .article__card--image {
+    width: 100%;
+    height: auto;
+  }
+  .footer_container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .contactus_div h2 {
+    font-size: 44px;
+    color: white;
+  }
 }/*# sourceMappingURL=style.css.map */
