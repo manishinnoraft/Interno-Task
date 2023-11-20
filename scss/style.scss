@@ -1,5 +1,5 @@
 @import './variables.scss';
-
+// General CSS
 * {
   margin: 0;
   padding: 0;
@@ -16,8 +16,8 @@ a {
 
 p {
   font-family: Jost;
+  letter-spacing: 0.22px;
 }
-
 h1,
 h2,
 h3,
@@ -25,15 +25,26 @@ h4 {
   font-family: DM sans Serif;
 }
 
+// slider css
+.slick-track {
+  width: 100% !important;
+}
+
+ul.slick-dots li {
+  background-color: grey;
+  border-radius: 30px;
+}
+
+ul.slick-dots li.slick-active {
+  background-color: black;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-p {
-  letter-spacing: 0.22px;
-}
-
+// Header CSS 
 header {
   padding: 44px 0;
 }
@@ -42,6 +53,10 @@ header {
   display: flex;
   justify-content: space-between;
   text-align: center;
+}
+
+.bar_icon {
+  display: none;
 }
 
 .logo__div {
@@ -92,6 +107,7 @@ header {
   }
 }
 
+// Banner CSS
 .banner__div {
   position: relative;
 
@@ -169,6 +185,7 @@ header {
   right: -25px;
 }
 
+// Features Section CSS
 .features_section {
   padding: 0 20px;
   gap: 42px;
@@ -246,6 +263,7 @@ header {
   }
 }
 
+// Art Section CSS
 .art__section {
   display: flex;
   justify-content: space-between;
@@ -266,7 +284,7 @@ header {
 .user__location {
   font-size: 18px !important;
 }
-
+// About Us Section CSS
 .about__us__div {
   border-radius: 75px;
   margin-top: 150px;
@@ -282,13 +300,23 @@ header {
   }
 }
 
+.cards {
+  .slick-track {
+    display: flex;
+    gap: 30px;
+
+  }
+}
+
 .flexspace {
   justify-content: space-around;
+  display: flex;
 }
 
 .user_card {
   padding: 30px;
-  width: 25.5% !important;
+  width: 33% !important;
+  height: 380px;
   background-color: white;
   border-radius: 10%;
 }
@@ -302,7 +330,7 @@ header {
   font-size: 22px;
   margin-top: 25px;
 }
-
+// Brand Section CSS
 .brand__section {
   margin: 10rem 0;
 }
@@ -312,7 +340,7 @@ header {
   display: flex;
   justify-content: space-around !important;
 }
-
+// Project Section CSS
 .project__div {
   &--description {
     text-align: center;
@@ -400,6 +428,7 @@ header {
   margin: 150px 0;
 }
 
+// Counter Section CSS
 .counter__card {
   border-right: 1px solid $color_cdarkbrwon;
   padding-right: 3rem;
@@ -427,100 +456,7 @@ header {
   align-items: center;
 }
 
-.contactus_div {
-  margin-top: 150px;
-  background-color: $color_cblackbg;
-  text-align: center;
-  border-radius: 50px;
-  padding: 80px 0;
-
-  & h2 {
-    font-size: 50px;
-    color: white;
-  }
-
-  p {
-    font-size: 22px;
-    color: white;
-  }
-}
-
-.contact_btn {
-  position: relative;
-  margin-top: 32px;
-  padding: 28px 40px;
-  border-radius: 10px;
-  background-color: $color_cdarkbrwon;
-  color: white;
-  font-weight: 600;
-  border: none;
-
-}
-
-.contactarrow_icon {
-  position: absolute;
-  right: 13px;
-  top: 50%;
-  transform: translateY(-50%);
-
-  & img {
-    width: 15px;
-    height: 15px;
-  }
-}
-
-// Footer
-footer {
-  margin-top: 150px;
-}
-
-.social_div {
-  display: flex;
-  gap: 54px;
-}
-
-.social_icon_para {
-  margin: 18px 0 32px 0;
-}
-
-.footer_innerdiv {
-  & ul li {
-    margin-top: 1rem;
-    font-size: 22px;
-    list-style-type: none;
-
-    & a {
-      color: $color-cgrey;
-    }
-  }
-
-}
-
-.footer_container {
-  display: flex;
-  justify-content: space-between;
-
-  & h3 {
-    font-size: 25px;
-  }
-}
-
-.share_div_footer {
-  width: 200px;
-}
-
-.address_div {
-  & p {
-    margin-top: 1rem;
-  }
-}
-
-.copyright_section {
-  margin-top: 150px;
-  padding: 1rem 0;
-  text-align: center;
-}
-
+// Articles Section CSS
 .articles_section {
   margin-top: 150px;
 }
@@ -571,6 +507,107 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+// Contact us Section CSS
+.contactus_div {
+  margin-top: 150px;
+  background-color: $color_cblackbg;
+  text-align: center;
+  border-radius: 50px;
+  padding: 80px 0;
+
+  & h2 {
+    font-size: 50px;
+    color: white;
+  }
+
+  p {
+    font-size: 22px;
+    color: white;
+  }
+}
+
+.contact_btn {
+  position: relative;
+  margin-top: 32px;
+  padding: 28px 40px;
+  border-radius: 10px;
+  background-color: $color_cdarkbrwon;
+  color: white;
+  font-weight: 600;
+  border: none;
+
+}
+
+.contactarrow_icon {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  & img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+// Footer CSS
+footer {
+  margin-top: 150px;
+}
+
+.social_div {
+  display: flex;
+  gap: 54px;
+}
+
+.social_icon_para {
+  margin: 18px 0 32px 0;
+  color: $color-cgrey;
+}
+
+.footer_innerdiv {
+  & ul li {
+    margin-top: 1rem;
+    font-size: 22px;
+    list-style-type: none;
+
+    & a {
+      color: $color-cgrey;
+    }
+  }
+
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+
+  & h3 {
+    font-size: 25px;
+  }
+}
+
+.share_div_footer {
+  width: 200px;
+}
+
+.address_div {
+  & p {
+    margin-top: 1rem;
+  }
+}
+
+.copyright_section {
+  margin-top: 150px;
+  padding: 1rem 0;
+  color: $color-cgrey;
+  text-align: center;
+}
+
+.address_div p {
+  color: $color-cgrey;
+}
+
 
 
 // Applying media queries XL Display
@@ -636,6 +673,8 @@ footer {
 
 }
 
+// Applying media queries for mini desktops and large tablets
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .container {
 
@@ -695,9 +734,6 @@ footer {
     gap: 20px;
   }
 
-  .user_card {
-    width: 38% !important;
-  }
 
   .design__div--heading {
     text-align: center;
@@ -755,96 +791,571 @@ footer {
     gap: 50px;
   }
 
-  .footer_inn,
-  herdiv {
+  .footer_innerdiv {
     width: 40%;
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .container{
+// Applying media queries for normal size tablets
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .container {
     max-width: 540px;
     margin: 0 auto;
   }
-  p{
+
+  .bar_icon {
+    display: block;
+  }
+
+  .navbar__list {
+    display: none;
+
+    & li {
+      padding: 10px 0;
+    }
+  }
+
+  p {
     letter-spacing: 0;
   }
-  .flex-row{
-    flex-direction: column;
+
+  .flex-row {
     align-items: center;
     gap: 30px;
   }
-  .navbar{
-    flex-direction:column;
+
+  .navbar {
+    flex-direction: column;
+
   }
-  .navbar__list{
+
+  .flex-row {
+    position: relative;
+  }
+
+  .navbar__list {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: 9999;
+  }
+
+  .navbar__list {
     flex-direction: column;
     gap: 10px;
   }
-  .search__div{
+
+  .search__div {
     margin-top: 10px;
   }
+
   .banner__div--content h2 {
     font-size: 36px;
     color: #292f36;
-}
-.banner__div img {
-  border-bottom-left-radius: 120px;
-}
-.banner__div--content button {
-  font-size: 16px;
-  padding: 18px 36px;
-}
-.button__div--arrow {
-  right: 12px;
-}
-.horizontalflex{
-  flex-direction: column;
+  }
+
+  .banner__div img {
+    border-bottom-left-radius: 120px;
+  }
+
+  .banner__div--content button {
+    font-size: 16px;
+    padding: 18px 36px;
+  }
+
+  .button__div--arrow {
+    right: 12px;
+  }
+
+  .features_section {
+    padding: 50px;
+  }
+
+  .horizontalflex {
+    flex-direction: column;
+  }
+
+  .features__div {
+    margin: 30px 0 0 0;
+  }
+
+  .features__div p {
+    margin-top: 15px;
+  }
+
+  .art__section {
+    display: block;
+    text-align: justify;
+  }
+
+  .design__div {
+    width: 100%;
+  }
+
+  .design__image img {
+    width: 100%;
+  }
+
+  .user_card {
+    width: 100% !important;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 50px;
+  }
+
+  .brand__div {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .project__row-1 {
+    flex-direction: column;
+  }
+
+  .arrange_cards {
+    flex-direction: column;
+  }
+
+  .article__card {
+
+    width: 100%;
+  }
+
+  .article__card--image {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer_container {
+
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contactus_div h2 {
+    font-size: 44px;
+    color: white;
+  }
+
+  .project__card--image-2 img {
+    width: 100%;
+  }
+
+  .project__card--image-1 img {
+    width: 100%;
+  }
+
+  .project__card--image-3 img {
+    width: 100%;
+  }
+
+  .project__card--image-4 img {
+    width: 100%;
+  }
+
+  .project__card {
+    width: 100%;
+  }
 }
 
-.features__div{
-  margin: 30px 0 0 0;
-}
-.art__section{
-  display: block;
-  text-align: justify;
-}
-.design__image img{
-  width: 100%;
-}
+// Applying media queries for mobile view
 
-.user_card{
-  width: 100% !important;
-  max-width: 80%;
-  margin: 0 auto;
-  margin-top: 30px;
-  border-radius: 50px;
-}
-.brand__div{
-  flex-direction: column;
-  gap: 30px;
-}
-.project__row-1{
-  flex-direction: column;
-}
-.arrange_cards{
-  flex-direction: column;
-}
-.article__card {
- 
-  width: 100%;
-}
-.article__card--image {
-  width: 100%;
-  height: auto;
-}
-.footer_container {
-  
-  flex-direction: column;
-  gap: 30px;
-}
-.contactus_div h2 {
-  font-size: 44px;
-  color: white;
-}
+@media only screen and (max-width: 575px) {
+
+  .container {
+    width: 100%;
+
+  }
+
+  h2 {
+    font-size:  $font-size-24;
+  }
+
+  header {
+    padding: 30px 0;
+  }
+
+  .logo__div {
+    height: 30px;
+    width: 30px;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  .logo__title {
+    font-size:  $font-size-24;
+  }
+
+  .bar_icon {
+    display: block;
+  }
+
+  .navbar__list {
+    display: none;
+
+    & li {
+      padding: 10px 0;
+    }
+  }
+
+  p {
+    letter-spacing: 0;
+    font-size: $font-size-12;
+  }
+
+  .flex-row {
+    align-items: center;
+    gap: 30px;
+  }
+
+  .navbar {
+    flex-direction: column;
+
+  }
+
+  .flex-row {
+    position: relative;
+  }
+
+  .navbar__list {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: 9999;
+  }
+
+  .navbar__list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search__div {
+    margin-top: 10px;
+  }
+
+  .banner__div--content h2 {
+    font-size:  $font-size-24;
+    color: #292f36;
+  }
+
+  .banner__div img {
+    border-bottom-left-radius: 0px;
+  }
+
+  .banner__div--content button {
+    font-size: $font-size-12;
+    padding: 12px 24px;
+  }
+
+  .button__div--arrow {
+    right: 5px;
+  }
+  .button__div--arrow img{
+    height: 15px;
+    width: 15px;
+  }
+  .horizontalflex {
+    flex-direction: column;
+  }
+
+  .features__div {
+    margin: 30px 0 0 0;
+  }
+
+  .features__div p {
+    margin-top: 10px;
+  }
+
+  .features_section {
+    padding: 0px;
+    gap: 0px;
+  }
+
+  .art__section {
+    display: block;
+    margin: 30px 0;
+    text-align: justify;
+  }
+
+  .design__div {
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  .design__image img {
+    width: 100%;
+  }
+
+  .user_card {
+    width: 100% !important;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 50px;
+  }
+
+  .brand__div {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .project__row-1 {
+    flex-direction: column;
+  }
+
+  .arrange_cards {
+    flex-direction: column;
+  }
+
+  .article__card {
+
+    width: 100%;
+  }
+
+  .article__card--image {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer_container {
+
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contactus_div h2 {
+    font-size: 44px;
+    color: white;
+  }
+
+  .project__card--image-2 img {
+    width: 100%;
+  }
+
+  .project__card--image-1 img {
+    width: 100%;
+  }
+
+  .project__card--image-3 img {
+    width: 100%;
+  }
+
+  .project__card--image-4 img {
+    width: 100%;
+  }
+
+  .project__card {
+    width: 100%;
+  }
+
+  .design__div--heading {
+    font-size:  $font-size-24;
+    line-height: 22px;
+  }
+
+  .features__div p {
+    font-size: $font-size-12;
+    margin: 10px 0;
+  }
+
+  .about__us__div {
+    margin: 0;
+
+    &--heading {
+      font-size:  $font-size-24;
+    }
+  }
+
+  .readmore__div button {
+    font-size: $font-size-12;
+  }
+
+  .button__div--rdarrow img {
+    height: 12px;
+    width: 12px;
+  }
+
+  .design__div {
+    margin: 30px 0;
+  }
+
+  .design__div--content {
+    font-size: $font-size-12;
+    line-height: 18px;
+    margin: 10px 0;
+  }
+
+  .design__div--heading {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .call__div--icon img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .contact__div--details {
+    margin-left: 15px;
+
+    p:nth-child(1) {
+      font-size: $font-size-12;
+      color: black;
+    }
+
+    p:nth-child(2) {
+      font-size: 14px;
+      color: $color-cgrey;
+    }
+  }
+
+  .project__div--description--heading {
+    font-size:  $font-size-24;
+
+  }
+
+  .project__div--description--text {
+    margin: 0;
+    font-size: $font-size-12;
+    line-height: 12px;
+    color: #4D5053;
+  }
+
+  .project__card--title {
+    font-size: 14px;
+  }
+
+  .project__card--category {
+    font-size: $font-size-12;
+  }
+
+  .project_arrow_div {
+    height: 40px;
+    width: 40px;
+  }
+
+  .counter_div {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .brand__section {
+    margin: 30px 0;
+  }
+
+  .counter__card {
+    border: none;
+    padding: 0;
+  }
+
+  .counter__card p {
+    font-size: $font-size-12;
+    color: #4D5053;
+  }
+
+  .counter__card h2 {
+    font-size:  $font-size-24;
+    color: #CDA274;
+  }
+
+  .project__card {
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .article_heading {
+    font-size:  $font-size-24;
+  }
+
+  .date_arrow_div img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .date_arrow_div {
+    margin-top: 0;
+  }
+
+  .project__row-1 {
+
+    gap: 0px;
+  }
+
+  .article_description {
+    margin-bottom: 10px;
+  }
+
+  .contactus_div {
+    margin: 0 0;
+  }
+
+  .contactus_div h2 {
+    font-size:  $font-size-24;
+  }
+
+  .contactus_div p {
+    font-size: 16px;
+  }
+
+  .arrange_cards {
+    flex-direction: column;
+    padding: 25px 0;
+    gap: 25px;
+  }
+
+  .articles_section {
+    margin: 0;
+  }
+
+  .counter_section {
+    background-color: #F4F0EC;
+    padding: 10px 0;
+    margin: 10px 0;
+  }
+
+  .article_description {
+    max-width: 500px;
+    margin: 10px auto;
+    font-size: $font-size-12;
+    color: #4D5053;
+
+  }
+
+  .contact_btn {
+    padding: 15px 30px;
+  }
+
+  .footer_innerdiv ul li a {
+
+    font-size: $font-size-12;
+  }
+
+  .footer_container h3 {
+    font-size: 22px;
+  }
+
+  .copyright_section {
+    margin: 0px;
+    color: $color-cgrey;
+  }
+
+  footer {
+    margin-top: 30px;
+  }
+
+  .footer_innerdiv ul li {
+    margin-top: 0px;
+    font-size: 16px;
+
+  }
+
+  .address_div p {
+    margin-top: 0p x;
+    color: $color-cgrey;
+  }
 }
