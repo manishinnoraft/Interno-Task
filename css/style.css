@@ -1,8 +1,10 @@
 @font-face {
   font-family: DM serif Display;
+  font-display: swap;
   src: url(../vendor/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
 }
 @font-face {
+  font-display: swap;
   font-family: Jost;
   src: url(../vendor/fonts/Jost/Jost-VariableFont_wght.ttf);
 }
