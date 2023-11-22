@@ -275,9 +275,12 @@ header {
 }
 
 // About Us Section CSS
+.about__us__section{
+  margin: 200px 0;
+}
 .about__us__div {
   border-radius: 75px;
-  margin: 200px 0 150px;
+  margin: 200px auto 150px auto;
   padding: 90px 0;
   background-color: $color_clightbrown;
 
