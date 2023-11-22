@@ -8,6 +8,12 @@
 .textcenter {
   text-align: center;
 }
+img{
+  height: 100%;
+  width: 100%;
+  display: block;
+  
+}
 
 a {
   text-decoration: none;
@@ -121,7 +127,13 @@ header {
 
   }
 }
-
+.banner{
+  width: 100%;
+  height: auto;
+}
+.social_div img{
+  object-fit: contain;
+}
 .banner__div--content {
   h2 {
     font-size: 84px;
@@ -537,11 +549,10 @@ header {
   margin-left: 5px;
   top: 50%;
   transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  right: 10px;
 
-  & img {
-    width: 15px;
-    height: 15px;
-  }
 }
 
 // Footer CSS
@@ -648,6 +659,11 @@ header {
 
   .social_div {
     flex-wrap: wrap;
+  }
+  .social_div img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
   }
 
   .design__image {
@@ -796,6 +812,10 @@ header {
 
   .bar_icon {
     display: block;
+    & img{
+      width: 30px;
+      height: 30px;
+    }
   }
 
   .navbar__list {
@@ -832,7 +852,16 @@ header {
   }
 
   .navbar__list {
-    flex-direction: column;
+    flex-direction: column;.contact_btn img {
+      position: absolute;
+      margin-left: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 20px;
+      width: 20px;
+      right: 10px;
+    
+    }
     gap: 10px;
   }
 
@@ -982,6 +1011,10 @@ header {
 
   .bar_icon {
     display: block;
+    & img{
+      width: 30px;
+      height: 30px;
+    }
   }
 
   .navbar__list {
@@ -1100,6 +1133,13 @@ header {
   .arrange_cards {
     flex-direction: column;
   }
+  .contact_btn img {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    right: 10px;
+  
+  }
 
   .article__card {
 
@@ -1151,7 +1191,9 @@ header {
     font-size: $font-size-12;
     margin: 10px 0;
   }
-
+  .about__us__section{
+    margin: 30px 0;
+  }
   .about__us__div {
     margin: 0;
 
@@ -1209,6 +1251,9 @@ header {
 
   }
 
+  .project__section{
+    margin: 30px 0;
+  }
   .project__div--description--text {
     margin: 0;
     font-size: $font-size-12;
@@ -1259,6 +1304,7 @@ header {
     margin: 0 auto;
   }
 
+
   .article_heading {
     font-size:  $font-size-24;
   }
@@ -1280,7 +1326,9 @@ header {
   .article_description {
     margin-bottom: 10px;
   }
-
+  .contactus_section{
+    margin-bottom: 30px;
+  }
   .contactus_div {
     margin: 0 0;
   }
@@ -1299,8 +1347,8 @@ header {
     gap: 25px;
   }
 
-  .articles_section {
-    margin: 0;
+  .articles_section{
+    margin: 30px 0;
   }
 
   .counter_section {

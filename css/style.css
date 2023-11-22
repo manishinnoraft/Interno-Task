@@ -1,10 +1,8 @@
 @font-face {
   font-family: DM serif Display;
-  font-display: swap;
   src: url(../vendor/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
 }
 @font-face {
-  font-display: swap;
   font-family: Jost;
   src: url(../vendor/fonts/Jost/Jost-VariableFont_wght.ttf);
 }
@@ -15,6 +13,12 @@
 
 .textcenter {
   text-align: center;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  display: block;
 }
 
 a {
@@ -118,6 +122,16 @@ header {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+.social_div img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .banner__div--content h2 {
@@ -498,10 +512,9 @@ header {
   margin-left: 5px;
   top: 50%;
   transform: translateY(-50%);
-}
-.contact_btn img img {
-  width: 15px;
-  height: 15px;
+  height: 20px;
+  width: 20px;
+  right: 10px;
 }
 
 .social_div {
@@ -582,6 +595,12 @@ header {
   }
   .social_div {
     flex-wrap: wrap;
+  }
+  .social_div img {
+    width: 20px;
+    height: 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .design__image {
     width: 50%;
@@ -693,6 +712,10 @@ header {
   .bar_icon {
     display: block;
   }
+  .bar_icon img {
+    width: 30px;
+    height: 30px;
+  }
   .navbar__list {
     display: none;
   }
@@ -721,6 +744,15 @@ header {
   .navbar__list {
     flex-direction: column;
     gap: 10px;
+  }
+  .navbar__list .contact_btn img {
+    position: absolute;
+    margin-left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+    right: 10px;
   }
   .search__div {
     margin-top: 10px;
@@ -825,6 +857,10 @@ header {
   .bar_icon {
     display: block;
   }
+  .bar_icon img {
+    width: 30px;
+    height: 30px;
+  }
   .navbar__list {
     display: none;
   }
@@ -911,6 +947,12 @@ header {
   .arrange_cards {
     flex-direction: column;
   }
+  .contact_btn img {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    right: 10px;
+  }
   .article__card {
     width: 100%;
   }
@@ -948,6 +990,9 @@ header {
   .features__div p {
     font-size: 12px;
     margin: 10px 0;
+  }
+  .about__us__section {
+    margin: 30px 0;
   }
   .about__us__div {
     margin: 0;
@@ -992,6 +1037,9 @@ header {
   }
   .project__div--description--heading {
     font-size: 24px;
+  }
+  .project__section {
+    margin: 30px 0;
   }
   .project__div--description--text {
     margin: 0;
@@ -1049,6 +1097,9 @@ header {
   .article_description {
     margin-bottom: 10px;
   }
+  .contactus_section {
+    margin-bottom: 30px;
+  }
   .contactus_div {
     margin: 0 0;
   }
@@ -1064,7 +1115,7 @@ header {
     gap: 25px;
   }
   .articles_section {
-    margin: 0;
+    margin: 30px 0;
   }
   .counter_section {
     background-color: #F4F0EC;
