@@ -46,6 +46,7 @@ ul.slick-dots li.slick-active {
 }
 
 // Header CSS 
+
 header {
   padding: 44px 0;
 }
@@ -64,17 +65,16 @@ header {
   display: flex;
   align-items: center;
 
-  &img {
+  & img {
     width: 34px;
     height: 34px;
   }
-
 }
 
 .logo__title {
   font-size: $font-size-40;
   font-weight: 600;
-  margin-left: 10px
+  margin-left: 10px;
 }
 
 .navbar {
@@ -87,27 +87,25 @@ header {
   list-style-type: none;
   align-items: center;
 
-  & li {
+  & > li {
     margin-left: 1.5rem;
 
-    & a {
+    & > a {
       font-size: $font-size-20;
       text-decoration: none;
       color: $color-cblack;
     }
-
   }
 }
 
 .search__div {
   margin-left: 32px;
 
-  &img {
+  & > img {
     width: 20px;
     height: 20px;
   }
 }
-
 // Banner CSS
 .banner__div {
   position: relative;
@@ -193,17 +191,16 @@ header {
 }
 
 .features__div {
-  margin: 150px 0;
+  margin: 200px 0;
   text-align: center;
 
-  & p {
+  p {
     color: $color-cgrey;
     text-align: center;
     margin: 20px 0 52px 0;
     font-size: 22px;
     letter-spacing: 0.22px;
   }
-
 }
 
 .horizontalflex {
@@ -211,14 +208,12 @@ header {
   justify-content: space-between;
 }
 
-
 .design__div {
   width: 470px;
 
   &--heading {
     font-size: 50px;
     line-height: 62.5px;
-
   }
 
   &--content {
@@ -227,7 +222,6 @@ header {
     font-size: 22px;
     line-height: 33px;
   }
-
 }
 
 .call__div {
@@ -238,22 +232,18 @@ header {
     width: max-content;
     height: max-content;
 
-
-
-    &img {
+    img {
       width: 100px;
       height: 100px;
       border-radius: 50px;
-
     }
   }
-
 }
 
 .contact__div--details {
   margin-left: 15px;
 
-  & h3 {
+  h3 {
     font-size: $font-size-24;
     font-weight: 700;
   }
@@ -276,20 +266,18 @@ header {
   border-bottom-left-radius: 25%;
 }
 
-.user__div {
-  & img {
-    border-radius: 50px;
-  }
+.user__div img {
+  border-radius: 50px;
 }
 
 .user__location {
   font-size: 18px !important;
 }
+
 // About Us Section CSS
 .about__us__div {
   border-radius: 75px;
-  margin-top: 150px;
-
+  margin: 200px 0 150px;
   padding: 90px 0;
   background-color: $color_clightbrown;
 
@@ -297,7 +285,6 @@ header {
     text-align: center;
     font-size: 53px;
     margin-bottom: 38px;
-
   }
 }
 
@@ -305,7 +292,6 @@ header {
   .slick-track {
     display: flex;
     gap: 30px;
-
   }
 }
 
@@ -331,10 +317,9 @@ header {
   font-size: 22px;
   margin-top: 25px;
 }
+
 // Brand Section CSS
-.brand__section {
-  margin: 10rem 0;
-}
+
 
 .brand__div {
   align-items: center;
@@ -342,6 +327,9 @@ header {
   justify-content: space-around !important;
 }
 // Project Section CSS
+.project__section{
+  margin: 150px 0;
+}
 .project__div {
   &--description {
     text-align: center;
@@ -426,7 +414,6 @@ header {
 .counter_section {
   background-color: $color_clightbrown;
   padding: 5rem 0;
-  margin: 150px 0;
 }
 
 // Counter Section CSS
@@ -459,7 +446,7 @@ header {
 
 // Articles Section CSS
 .articles_section {
-  margin-top: 150px;
+  margin: 200px 0;
 }
 
 .article__card {
@@ -471,14 +458,14 @@ header {
 .article__card--image {
   width: 340px;
   height: auto;
-}
 
-.article__card--image img {
-  width: 100%;
-  height: 100%;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 50px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 50px;
+  }
 }
 
 .date_arrow_div {
@@ -487,7 +474,7 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  & img {
+  img {
     width: 52px;
     height: 52px;
   }
@@ -509,8 +496,11 @@ header {
   justify-content: space-between;
 }
 // Contact us Section CSS
+.contactus_section{
+  margin-bottom: 134px;
+}
 .contactus_div {
-  margin-top: 150px;
+  
   background-color: $color_cblackbg;
   text-align: center;
   border-radius: 50px;
@@ -539,9 +529,9 @@ header {
 
 }
 
-.contactarrow_icon {
+.contact_btn img {
   position: absolute;
-  right: 13px;
+  margin-left: 5px;
   top: 50%;
   transform: translateY(-50%);
 
@@ -552,9 +542,6 @@ header {
 }
 
 // Footer CSS
-footer {
-  margin-top: 150px;
-}
 
 .social_div {
   display: flex;
@@ -599,7 +586,7 @@ footer {
 }
 
 .copyright_section {
-  margin-top: 150px;
+  margin-top: 134px;
   padding: 1rem 0;
   color: $color-cgrey;
   text-align: center;
