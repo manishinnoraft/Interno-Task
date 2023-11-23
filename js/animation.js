@@ -1,11 +1,4 @@
-// Hamburger menu js
-$(document).ready(function () {
-    const menuBtn = $(".bar_icon");
-    const list = $(".navbar__list");
-    menuBtn.click(function () {
-      list.toggle();
-    });
-  });
+
 
 //Counter Js
 var animationTriggered = false;
