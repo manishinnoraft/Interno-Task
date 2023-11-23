@@ -204,7 +204,12 @@ header {
 
 .features__div {
   margin: 200px 0;
+  padding: 5px 0;
   text-align: center;
+  &:hover{
+    box-shadow: 1px 1px 3px 3px grey;
+    scale: 1.1;
+  }
 
   p {
     color: $color-cgrey;
@@ -321,6 +326,12 @@ header {
   height: 380px;
   background-color: white;
   border-radius: 10%;
+
+  &:hover{
+    scale: 1.1;
+    cursor: pointer;
+    border-radius: 0;
+  }
 }
 
 .user_card p {
@@ -541,7 +552,9 @@ header {
   color: white;
   font-weight: 600;
   border: none;
-
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 .contact_btn img {
@@ -559,7 +572,11 @@ header {
 
 .social_div {
   display: flex;
+  align-items: center;
   gap: 54px;
+  & img:hover{
+    scale: 1.1;
+  }
 }
 
 .social_icon_para {
@@ -1397,4 +1414,25 @@ header {
     margin-top: 0p x;
     color: $color-cgrey;
   }
+}
+
+// Animation CSS
+
+@keyframes slideIn {
+  from {
+    left: -100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  to {
+    left: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+   
+  }
+}
+
+.contact_btn:hover img {
+  animation: slideIn 0.3s ease forwards; /* Stop the ongoing animation on hover */
+  left: 0;
 }

@@ -8,11 +8,13 @@
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="./js/slick.min.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/animation.js"></script>
 
 </head>
 
@@ -69,7 +71,8 @@
     <!-- Banner Section Ends -->
     <!-- Features or Testiomonial Section Starts -->
     <section class="container horizontalflex features_section">
-      <div class="features__div">
+      <div data-aos="fade-up"
+      data-aos-duration="700" class="features__div">
         <h2>Project Plan</h2>
         <p>There are many variations of the passages of lorem Ipsum from
           available, majority.</p>
@@ -80,7 +83,8 @@
           </div>
         </div>
       </div>
-      <div class="features__div">
+      <div data-aos="fade-up"
+      data-aos-duration="700" class="features__div">
         <h2>Interior Work</h2>
         <p>There are many variations of the passages of lorem Ipsum from
           available, majority.</p>
@@ -91,7 +95,8 @@
           </div>
         </div>
       </div>
-      <div class="features__div">
+      <div data-aos="fade-up"
+      data-aos-duration="700" class="features__div">
         <h2>Realization</h2>
         <p>There are many variations of the passages of lorem Ipsum from
           available, majority.</p>
@@ -127,7 +132,8 @@
             </div>
           </div>
         </div>
-        <div class="design__image">
+        <div class="design__image" data-aos="fade-up"
+        data-aos-duration="700">
           <img src="./images/designphoto.webp" alt="Design Image" height="700" width="653">
         </div>
       </div>
@@ -193,7 +199,7 @@
     <!-- Branding Section Starts -->
     <section class="brand__section">
       <div class="container brand__div">
-        <div><img src="./images/brand1.svg" alt="Brand Image 1" height="44" width="132"></div>
+        <div ><img src="./images/brand1.svg" alt="Brand Image 1" height="44" width="132"></div>
         <div><img src="./images/brand2.svg" alt="Brand Image 2" height="103" width="103"></div>
         <div><img src="./images/brand3.svg" alt="Brand Image 3" height="44" width="164"></div>
         <div><img src="./images/brand4.svg" alt="Brand Image 4" height="45" width="146"></div>
@@ -209,7 +215,7 @@
           <p class="project__div--description--text">It is a long established fact that a reader will be distracted by
             the of readable <br>content of page lookings at its layouts points.</p>
         </div>
-        <div class="project__row-1">
+        <div data-aos="fade-up" class="project__row-1">
           <div class="project__card">
             <div class="project__card--image-1">
               <img src="./images/project1.webp" alt="Project 1 Image" height="525" width="550">
@@ -233,7 +239,7 @@
             </div>
           </div>
         </div>
-        <div class="project__row-1">
+        <div data-aos="fade-down" class="project__row-1">
           <div class="project__card">
             <div class="project__card--image-3">
               <img src="./images/project3.webp" alt="Project 3 Image" height="525" width="550">
@@ -289,7 +295,7 @@
         readable content of a page when lookings at its layouts the points of using.</p>
       <div class="container ">
         <div class="arrange_cards">
-          <div class="project__card article__card">
+          <div data-aos="flip-left" class="project__card article__card">
             <div class="project__card--image-3 article__card--image">
               <img src="./images/article1.webp" alt="Poject 3 Image" height="340" width="290">
             </div>
@@ -299,7 +305,7 @@
               <img src="./images/projectarrowbtn.svg" alt="Project arrow Icon" height="52" width="52">
             </div>
           </div>
-          <div class="project__card article__card">
+          <div data-aos="flip-left" class="project__card article__card">
             <div class="project__card--image-3 article__card--image">
               <img src="./images/article2.webp" alt="Project 3 Image" height="340" width="290">
             </div>
@@ -310,7 +316,7 @@
             </div>
           </div>
 
-          <div class="project__card article__card">
+          <div data-aos="flip-left" class="project__card article__card">
             <div class="project__card--image-3 article__card--image">
               <img src="./images/project3.webp" alt="Project 3 Image" height="340" width="290">
             </div>
@@ -329,9 +335,9 @@
       <div class="container contactus_div">
         <h2>Wanna Join the Interno?</h2>
         <p>It is a long established fact will be distracted.</p>
-        <button class="contact_btn">Contact With Us
-          <img src="./images/contactarrow.svg" alt="Contact arrow" height="17" width="17">
-        </button>
+          <button class="contact_btn">Contact With Us
+            <img src="./images/contactarrow.svg" alt="Contact arrow" height="17" width="17">
+          </button>
       </div>
     </section>
     <!-- Contact Us Secton Ends -->
@@ -389,7 +395,10 @@
   </footer>
   <!-- Footer Ends heree -->
 
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

@@ -130,8 +130,7 @@ header {
 }
 
 .social_div img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .banner__div--content h2 {
@@ -149,7 +148,6 @@ header {
 
 .button__div {
   position: relative;
-  width: -moz-max-content;
   width: max-content;
 }
 .button__div button {
@@ -172,7 +170,6 @@ header {
   left: 50%;
   transform: translateX(-50%);
   position: relative;
-  width: -moz-max-content;
   width: max-content;
 }
 .readmore__div button {
@@ -198,7 +195,12 @@ header {
 
 .features__div {
   margin: 200px 0;
+  padding: 5px 0;
   text-align: center;
+}
+.features__div:hover {
+  box-shadow: 1px 1px 3px 3px grey;
+  scale: 1.1;
 }
 .features__div p {
   color: #4D5053;
@@ -232,9 +234,7 @@ header {
   align-items: center;
 }
 .call__div --icon {
-  width: -moz-max-content;
   width: max-content;
-  height: -moz-max-content;
   height: max-content;
 }
 .call__div --icon img {
@@ -307,6 +307,11 @@ header {
   background-color: white;
   border-radius: 10%;
 }
+.user_card:hover {
+  scale: 1.1;
+  cursor: pointer;
+  border-radius: 0;
+}
 
 .user_card p {
   text-align: justify;
@@ -343,7 +348,6 @@ header {
 }
 
 .project__card {
-  width: -moz-max-content;
   width: max-content;
   margin-bottom: 56px;
 }
@@ -506,6 +510,9 @@ header {
   font-weight: 600;
   border: none;
 }
+.contact_btn:hover {
+  cursor: pointer;
+}
 
 .contact_btn img {
   position: absolute;
@@ -519,7 +526,11 @@ header {
 
 .social_div {
   display: flex;
+  align-items: center;
   gap: 54px;
+}
+.social_div img:hover {
+  scale: 1.1;
 }
 
 .social_icon_para {
@@ -599,8 +610,7 @@ header {
   .social_div img {
     width: 20px;
     height: 20px;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .design__image {
     width: 50%;
@@ -1152,4 +1162,20 @@ header {
     margin-top: 0p x;
     color: #4D5053;
   }
+}
+@keyframes slideIn {
+  from {
+    left: -100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  to {
+    left: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.contact_btn:hover img {
+  animation: slideIn 0.3s ease forwards; /* Stop the ongoing animation on hover */
+  left: 0;
 }/*# sourceMappingURL=style.css.map */
