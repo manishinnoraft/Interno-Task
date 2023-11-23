@@ -1,0 +1,33 @@
+$font-size-12: 12px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-24: 24px;
+$font-size-28: 28px;
+$font-size-32: 32px;
+$font-size-36: 36px;
+$font-size-40: 40px;
+$font-size-48: 48px;
+$font-size-56: 56px;
+$font-size-64: 64px;
+$font-size-72: 72px;
+$font-size-80: 80px;
+$font-size-84: 84px;
+$color-cgrey: #4D5053;
+$color-cblack: #292f36;
+$color_clightbrown:#F4F0EC;
+$color_cdarkbrwon: #CDA274;
+$color_cblackbg: #292F36;
+
+
+// Defining the Font Family
+
+@font-face {
+    font-family: DM serif Display;
+    src: url(../vendor/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: Jost;
+    src: url(../vendor/fonts/Jost/Jost-VariableFont_wght.ttf);
+}
