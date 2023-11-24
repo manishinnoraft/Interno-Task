@@ -7,6 +7,7 @@ $(document).ready(function () {
   });
 });
 
+// Slick slider js
 $(function() {
   $('.responsive').slick({
     dots: true,

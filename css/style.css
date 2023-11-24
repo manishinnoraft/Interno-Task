@@ -688,6 +688,13 @@ header {
     gap: none;
     justify-content: space-around;
   }
+  .counter_div {
+    flex-wrap: wrap;
+  }
+  .counter__card {
+    width: 40%;
+    border: none;
+  }
   .project__card img {
     width: 100%;
   }
